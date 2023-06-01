@@ -7,7 +7,7 @@
 	},
 	"item": [
 		{
-			"name": "New Request",
+			"name": "Ex_1",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -42,7 +42,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "Ex_2",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -80,7 +80,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "Ex_3",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -109,6 +109,368 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Ex_4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"followOriginalHttpMethod": false
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/object_info_3?name=Anatoliy&age=33&salary=750",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"object_info_3"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Anatoliy"
+						},
+						{
+							"key": "age",
+							"value": "33"
+						},
+						{
+							"key": "salary",
+							"value": "750"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "405",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/object_info_3?name=Anatoliy&age=33&salary=750",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"object_info_3"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Anatoliy"
+								},
+								{
+									"key": "age",
+									"value": "33"
+								},
+								{
+									"key": "salary",
+									"value": "750"
+								}
+							]
+						}
+					},
+					"status": "METHOD NOT ALLOWED",
+					"code": 405,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "Content-Length",
+							"value": "178"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.8.10"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 01 Jun 2023 09:29:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n<title>405 Method Not Allowed</title>\n<h1>Method Not Allowed</h1>\n<p>The method is not allowed for the requested URL.</p>"
+				},
+				{
+					"name": "500",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/object_info_3?name=Anatoliy&age=33&salary=750",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"object_info_3"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Anatoliy"
+								},
+								{
+									"key": "age",
+									"value": "33"
+								},
+								{
+									"key": "salary",
+									"value": "750"
+								}
+							]
+						}
+					},
+					"status": "INTERNAL SERVER ERROR",
+					"code": 500,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.8.10"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 01 Jun 2023 09:31:26 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n  \"http://www.w3.org/TR/html4/loose.dtd\">\n<html>\n    <head>\n        <title>TypeError: int() argument must be a string, a bytes-like object or a number, not &#x27;NoneType&#x27; // Werkzeug Debugger</title>\n        <link rel=\"stylesheet\" href=\"?__debugger__=yes&amp;cmd=resource&amp;f=style.css\"\n        type=\"text/css\">\n        <!-- We need to make sure this has a favicon so that the debugger does\n         not accidentally trigger a request to /favicon.ico which might\n         change the application's state. -->\n        <link rel=\"shortcut icon\"\n        href=\"?__debugger__=yes&amp;cmd=resource&amp;f=console.png\">\n        <script src=\"?__debugger__=yes&amp;cmd=resource&amp;f=debugger.js\"></script>\n        <script type=\"text/javascript\">\n      var TRACEBACK = 140235564734544,\n          CONSOLE_MODE = false,\n          EVALEX = true,\n          EVALEX_TRUSTED = false,\n          SECRET = \"vhmpQJ0kz8ilo9DcPjWd\";\n    </script>\n    </head>\n    <body style=\"background-color: #fff\">\n        <div class=\"debugger\">\n            <h1>TypeError</h1>\n            <div class=\"detail\">\n                <p class=\"errormsg\">TypeError: int() argument must be a string, a bytes-like object or a number, not &#x27;NoneType&#x27;</p>\n            </div>\n            <h2 class=\"traceback\">Traceback \n                <em>(most recent call last)</em>\n            </h2>\n            <div class=\"traceback\">\n                <h3></h3>\n                <ul>\n                    <li>\n                        <div class=\"frame\" id=\"frame-140235564734832\">\n                            <h4>File \n                                <cite class=\"filename\">\"/usr/local/lib/python3.8/dist-packages/flask/app.py\"</cite>,\n      line\n                                <em class=\"line\">2088</em>,\n      in\n                                <code class=\"function\">__call__</code>\n                            </h4>\n                            <div class=\"source \">\n                                <pre class=\"line before\">\n                                    <span class=\"ws\">    </span>def __call__(self, environ: dict, start_response: t.Callable) -&gt; t.Any:\n                                </pre>\n                                <pre class=\"line before\">\n                                    <span class=\"ws\">        </span>&quot;&quot;&quot;The WSGI server calls the Flask application object as the\n                                </pre>\n                                <pre class=\"line before\">\n                                    <span class=\"ws\">        </span>WSGI application. This calls :meth:`wsgi_app`, which can be\n                                </pre>\n                                <pre class=\"line before\">\n                                    <span class=\"ws\">        </span>wrapped to apply middleware.\n                                </pre>\n                                <pre class=\"line before\">\n                                    <span class=\"ws\">        </span>&quot;&quot;&quot;\n                                </pre>\n                                <pre class=\"line current\">\n                                    <span class=\"ws\">        </span>return self.wsgi_app(environ, start_response)\n                                </pre>\n                            </div>\n                        </div>\n                        <li>\n                            <div class=\"frame\" id=\"frame-140235564733104\">\n                                <h4>File \n                                    <cite class=\"filename\">\"/usr/local/lib/python3.8/dist-packages/flask/app.py\"</cite>,\n      line\n                                    <em class=\"line\">2073</em>,\n      in\n                                    <code class=\"function\">wsgi_app</code>\n                                </h4>\n                                <div class=\"source \">\n                                    <pre class=\"line before\">\n                                        <span class=\"ws\">            </span>try:\n                                    </pre>\n                                    <pre class=\"line before\">\n                                        <span class=\"ws\">                </span>ctx.push()\n                                    </pre>\n                                    <pre class=\"line before\">\n                                        <span class=\"ws\">                </span>response = self.full_dispatch_request()\n                                    </pre>\n                                    <pre class=\"line before\">\n                                        <span class=\"ws\">            </span>except Exception as e:\n                                    </pre>\n                                    <pre class=\"line before\">\n                                        <span class=\"ws\">                </span>error = e\n                                    </pre>\n                                    <pre class=\"line current\">\n                                        <span class=\"ws\">                </span>response = self.handle_exception(e)\n                                    </pre>\n                                    <pre class=\"line after\">\n                                        <span class=\"ws\">            </span>except:  # noqa: B001\n                                    </pre>\n                                    <pre class=\"line after\">\n                                        <span class=\"ws\">                </span>error = sys.exc_info()[1]\n                                    </pre>\n                                    <pre class=\"line after\">\n                                        <span class=\"ws\">                </span>raise\n                                    </pre>\n                                    <pre class=\"line after\">\n                                        <span class=\"ws\">            </span>return response(environ, start_response)\n                                    </pre>\n                                    <pre class=\"line after\">\n                                        <span class=\"ws\">        </span>finally:\n                                    </pre>\n                                </div>\n                            </div>\n                            <li>\n                                <div class=\"frame\" id=\"frame-140235564733440\">\n                                    <h4>File \n                                        <cite class=\"filename\">\"/usr/local/lib/python3.8/dist-packages/flask/app.py\"</cite>,\n      line\n                                        <em class=\"line\">2070</em>,\n      in\n                                        <code class=\"function\">wsgi_app</code>\n                                    </h4>\n                                    <div class=\"source \">\n                                        <pre class=\"line before\">\n                                            <span class=\"ws\">        </span>ctx = self.request_context(environ)\n                                        </pre>\n                                        <pre class=\"line before\">\n                                            <span class=\"ws\">        </span>error: t.Optional[BaseException] = None\n                                        </pre>\n                                        <pre class=\"line before\">\n                                            <span class=\"ws\">        </span>try:\n                                        </pre>\n                                        <pre class=\"line before\">\n                                            <span class=\"ws\">            </span>try:\n                                        </pre>\n                                        <pre class=\"line before\">\n                                            <span class=\"ws\">                </span>ctx.push()\n                                        </pre>\n                                        <pre class=\"line current\">\n                                            <span class=\"ws\">                </span>response = self.full_dispatch_request()\n                                        </pre>\n                                        <pre class=\"line after\">\n                                            <span class=\"ws\">            </span>except Exception as e:\n                                        </pre>\n                                        <pre class=\"line after\">\n                                            <span class=\"ws\">                </span>error = e\n                                        </pre>\n                                        <pre class=\"line after\">\n                                            <span class=\"ws\">                </span>response = self.handle_exception(e)\n                                        </pre>\n                                        <pre class=\"line after\">\n                                            <span class=\"ws\">            </span>except:  # noqa: B001\n                                        </pre>\n                                        <pre class=\"line after\">\n                                            <span class=\"ws\">                </span>error = sys.exc_info()[1]\n                                        </pre>\n                                    </div>\n                                </div>\n                                <li>\n                                    <div class=\"frame\" id=\"frame-140235564735600\">\n                                        <h4>File \n                                            <cite class=\"filename\">\"/usr/local/lib/python3.8/dist-packages/flask/app.py\"</cite>,\n      line\n                                            <em class=\"line\">1515</em>,\n      in\n                                            <code class=\"function\">full_dispatch_request</code>\n                                        </h4>\n                                        <div class=\"source \">\n                                            <pre class=\"line before\">\n                                                <span class=\"ws\">            </span>request_started.send(self)\n                                            </pre>\n                                            <pre class=\"line before\">\n                                                <span class=\"ws\">            </span>rv = self.preprocess_request()\n                                            </pre>\n                                            <pre class=\"line before\">\n                                                <span class=\"ws\">            </span>if rv is None:\n                                            </pre>\n                                            <pre class=\"line before\">\n                                                <span class=\"ws\">                </span>rv = self.dispatch_request()\n                                            </pre>\n                                            <pre class=\"line before\">\n                                                <span class=\"ws\">        </span>except Exception as e:\n                                            </pre>\n                                            <pre class=\"line current\">\n                                                <span class=\"ws\">            </span>rv = self.handle_user_exception(e)\n                                            </pre>\n                                            <pre class=\"line after\">\n                                                <span class=\"ws\">        </span>return self.finalize_request(rv)\n                                            </pre>\n                                            <pre class=\"line after\">\n                                                <span class=\"ws\"></span>\n                                            </pre>\n                                            <pre class=\"line after\">\n                                                <span class=\"ws\">    </span>def finalize_request(\n                                            </pre>\n                                            <pre class=\"line after\">\n                                                <span class=\"ws\">        </span>self,\n                                            </pre>\n                                            <pre class=\"line after\">\n                                                <span class=\"ws\">        </span>rv: t.Union[ResponseReturnValue, HTTPException],\n                                            </pre>\n                                        </div>\n                                    </div>\n                                    <li>\n                                        <div class=\"frame\" id=\"frame-140235564732768\">\n                                            <h4>File \n                                                <cite class=\"filename\">\"/usr/local/lib/python3.8/dist-packages/flask/app.py\"</cite>,\n      line\n                                                <em class=\"line\">1513</em>,\n      in\n                                                <code class=\"function\">full_dispatch_request</code>\n                                            </h4>\n                                            <div class=\"source \">\n                                                <pre class=\"line before\">\n                                                    <span class=\"ws\">        </span>self.try_trigger_before_first_request_functions()\n                                                </pre>\n                                                <pre class=\"line before\">\n                                                    <span class=\"ws\">        </span>try:\n                                                </pre>\n                                                <pre class=\"line before\">\n                                                    <span class=\"ws\">            </span>request_started.send(self)\n                                                </pre>\n                                                <pre class=\"line before\">\n                                                    <span class=\"ws\">            </span>rv = self.preprocess_request()\n                                                </pre>\n                                                <pre class=\"line before\">\n                                                    <span class=\"ws\">            </span>if rv is None:\n                                                </pre>\n                                                <pre class=\"line current\">\n                                                    <span class=\"ws\">                </span>rv = self.dispatch_request()\n                                                </pre>\n                                                <pre class=\"line after\">\n                                                    <span class=\"ws\">        </span>except Exception as e:\n                                                </pre>\n                                                <pre class=\"line after\">\n                                                    <span class=\"ws\">            </span>rv = self.handle_user_exception(e)\n                                                </pre>\n                                                <pre class=\"line after\">\n                                                    <span class=\"ws\">        </span>return self.finalize_request(rv)\n                                                </pre>\n                                                <pre class=\"line after\">\n                                                    <span class=\"ws\"></span>\n                                                </pre>\n                                                <pre class=\"line after\">\n                                                    <span class=\"ws\">    </span>def finalize_request(\n                                                </pre>\n                                            </div>\n                                        </div>\n                                        <li>\n                                            <div class=\"frame\" id=\"frame-140235564735312\">\n                                                <h4>File \n                                                    <cite class=\"filename\">\"/usr/local/lib/python3.8/dist-packages/flask/app.py\"</cite>,\n      line\n                                                    <em class=\"line\">1499</em>,\n      in\n                                                    <code class=\"function\">dispatch_request</code>\n                                                </h4>\n                                                <div class=\"source \">\n                                                    <pre class=\"line before\">\n                                                        <span class=\"ws\">            </span>getattr(rule, &quot;provide_automatic_options&quot;, False)\n                                                    </pre>\n                                                    <pre class=\"line before\">\n                                                        <span class=\"ws\">            </span>and req.method == &quot;OPTIONS&quot;\n                                                    </pre>\n                                                    <pre class=\"line before\">\n                                                        <span class=\"ws\">        </span>):\n                                                    </pre>\n                                                    <pre class=\"line before\">\n                                                        <span class=\"ws\">            </span>return self.make_default_options_response()\n                                                    </pre>\n                                                    <pre class=\"line before\">\n                                                        <span class=\"ws\">        </span># otherwise dispatch to the handler for that endpoint\n                                                    </pre>\n                                                    <pre class=\"line current\">\n                                                        <span class=\"ws\">        </span>return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)\n                                                    </pre>\n                                                    <pre class=\"line after\">\n                                                        <span class=\"ws\"></span>\n                                                    </pre>\n                                                    <pre class=\"line after\">\n                                                        <span class=\"ws\">    </span>def full_dispatch_request(self) -&gt; Response:\n                                                    </pre>\n                                                    <pre class=\"line after\">\n                                                        <span class=\"ws\">        </span>&quot;&quot;&quot;Dispatches the request and on top of that performs request\n                                                    </pre>\n                                                    <pre class=\"line after\">\n                                                        <span class=\"ws\">        </span>pre and postprocessing as well as HTTP exception catching and\n                                                    </pre>\n                                                    <pre class=\"line after\">\n                                                        <span class=\"ws\">        </span>error handling.\n                                                    </pre>\n                                                </div>\n                                            </div>\n                                            <li>\n                                                <div class=\"frame\" id=\"frame-140235564732912\">\n                                                    <h4>File \n                                                        <cite class=\"filename\">\"/usr/work/ws1_api/train_server_2/main_t.py\"</cite>,\n      line\n                                                        <em class=\"line\">583</em>,\n      in\n                                                        <code class=\"function\">object_info_3</code>\n                                                    </h4>\n                                                    <div class=\"source \">\n                                                        <pre class=\"line before\">\n                                                            <span class=\"ws\"></span>@app.route(&#x27;/object_info_3&#x27;, methods=[&#x27;GET&#x27;])\n                                                        </pre>\n                                                        <pre class=\"line before\">\n                                                            <span class=\"ws\"></span>def object_info_3():\n                                                        </pre>\n                                                        <pre class=\"line before\">\n                                                            <span class=\"ws\"></span>\n                                                        </pre>\n                                                        <pre class=\"line before\">\n                                                            <span class=\"ws\">    </span>name = request.args.get(&#x27;name&#x27;)\n                                                        </pre>\n                                                        <pre class=\"line before\">\n                                                            <span class=\"ws\">    </span>age = request.args.get(&#x27;age&#x27;)\n                                                        </pre>\n                                                        <pre class=\"line current\">\n                                                            <span class=\"ws\">    </span>salary = int(request.args.get(&#x27;salary&#x27;))\n                                                        </pre>\n                                                        <pre class=\"line after\">\n                                                            <span class=\"ws\"></span>\n                                                        </pre>\n                                                        <pre class=\"line after\">\n                                                            <span class=\"ws\">    </span>result = {&#x27;name&#x27;: name,\n                                                        </pre>\n                                                        <pre class=\"line after\">\n                                                            <span class=\"ws\">              </span>&#x27;age&#x27;: age,\n                                                        </pre>\n                                                        <pre class=\"line after\">\n                                                            <span class=\"ws\">              </span>&#x27;salary&#x27;: salary,\n                                                        </pre>\n                                                        <pre class=\"line after\">\n                                                            <span class=\"ws\">              </span>&#x27;family&#x27;: {&#x27;children&#x27;: [[&#x27;Alex&#x27;, 24], [&#x27;Kate&#x27;, 12]],\n                                                        </pre>\n                                                    </div>\n                                                </div>\n                                            </ul>\n                                            <blockquote>TypeError: int() argument must be a string, a bytes-like object or a number, not &#x27;NoneType&#x27;</blockquote>\n                                        </div>\n                                        <div class=\"plain\">\n                                            <p>\n      This is the Copy/Paste friendly version of the traceback.\n    </p>\n                                            <textarea cols=\"50\" rows=\"10\" name=\"code\" readonly>Traceback (most recent call last):\n  File &quot;/usr/local/lib/python3.8/dist-packages/flask/app.py&quot;, line 2088, in __call__\n    return self.wsgi_app(environ, start_response)\n  File &quot;/usr/local/lib/python3.8/dist-packages/flask/app.py&quot;, line 2073, in wsgi_app\n    response = self.handle_exception(e)\n  File &quot;/usr/local/lib/python3.8/dist-packages/flask/app.py&quot;, line 2070, in wsgi_app\n    response = self.full_dispatch_request()\n  File &quot;/usr/local/lib/python3.8/dist-packages/flask/app.py&quot;, line 1515, in full_dispatch_request\n    rv = self.handle_user_exception(e)\n  File &quot;/usr/local/lib/python3.8/dist-packages/flask/app.py&quot;, line 1513, in full_dispatch_request\n    rv = self.dispatch_request()\n  File &quot;/usr/local/lib/python3.8/dist-packages/flask/app.py&quot;, line 1499, in dispatch_request\n    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)\n  File &quot;/usr/work/ws1_api/train_server_2/main_t.py&quot;, line 583, in object_info_3\n    salary = int(request.args.get(&#x27;salary&#x27;))\nTypeError: int() argument must be a string, a bytes-like object or a number, not &#x27;NoneType&#x27;</textarea>\n                                        </div>\n                                        <div class=\"explanation\">\n  The debugger caught an exception in your WSGI application.  You can now\n  look at the traceback which led to the error.  \n                                            <span class=\"nojavascript\">\n  If you enable JavaScript you can also use additional features such as code\n  execution (if the evalex feature is enabled), automatic pasting of the\n  exceptions and much more.</span>\n                                        </div>\n                                        <div class=\"footer\">\n        Brought to you by \n                                            <strong class=\"arthur\">DON'T PANIC</strong>, your\n        friendly Werkzeug powered traceback interpreter.\n                                        </div>\n                                    </div>\n                                    <div class=\"pin-prompt\">\n                                        <div class=\"inner\">\n                                            <h3>Console Locked</h3>\n                                            <p>\n          The console is locked and needs to be unlocked by entering the PIN.\n          You can find the PIN printed out on the standard output of your\n          shell that runs the server.\n        \n                                                <form>\n                                                    <p>PIN:\n            \n                                                        <input type=text name=pin size=14>\n                                                        <input type=submit name=btn value=\"Confirm Pin\">\n        \n                                                    </form>\n                                                </div>\n                                            </div>\n                                        </body>\n                                    </html>\n                                    <!--\n\nTraceback (most recent call last):\n  File \"/usr/local/lib/python3.8/dist-packages/flask/app.py\", line 2088, in __call__\n    return self.wsgi_app(environ, start_response)\n  File \"/usr/local/lib/python3.8/dist-packages/flask/app.py\", line 2073, in wsgi_app\n    response = self.handle_exception(e)\n  File \"/usr/local/lib/python3.8/dist-packages/flask/app.py\", line 2070, in wsgi_app\n    response = self.full_dispatch_request()\n  File \"/usr/local/lib/python3.8/dist-packages/flask/app.py\", line 1515, in full_dispatch_request\n    rv = self.handle_user_exception(e)\n  File \"/usr/local/lib/python3.8/dist-packages/flask/app.py\", line 1513, in full_dispatch_request\n    rv = self.dispatch_request()\n  File \"/usr/local/lib/python3.8/dist-packages/flask/app.py\", line 1499, in dispatch_request\n    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)\n  File \"/usr/work/ws1_api/train_server_2/main_t.py\", line 583, in object_info_3\n    salary = int(request.args.get('salary'))\nTypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'\n\n-->\n"
+				}
+			]
+		},
+		{
+			"name": "Ex_5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/object_info_4?name=Anatoliy&age=33&salary=850",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"",
+						"object_info_4"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Anatoliy"
+						},
+						{
+							"key": "age",
+							"value": "33"
+						},
+						{
+							"key": "salary",
+							"value": "850"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "405",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/object_info_4?name=Anatoliy&age=33&salary=850",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"",
+								"object_info_4"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Anatoliy"
+								},
+								{
+									"key": "age",
+									"value": "33"
+								},
+								{
+									"key": "salary",
+									"value": "850"
+								}
+							]
+						}
+					},
+					"status": "METHOD NOT ALLOWED",
+					"code": 405,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "Content-Length",
+							"value": "178"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.8.10"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 01 Jun 2023 09:39:10 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2 Final//EN\">\n<title>405 Method Not Allowed</title>\n<h1>Method Not Allowed</h1>\n<p>The method is not allowed for the requested URL.</p>"
+				}
+			]
+		},
+		{
+			"name": "EX_6",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Tolik",
+							"type": "text"
+						},
+						{
+							"key": "age",
+							"value": "33",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "1000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/user_info_2",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"user_info_2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "1.5 month",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Tolik",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "33",
+									"type": "text"
+								},
+								{
+									"key": "salary",
+									"value": "1000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/user_info_2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"user_info_2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/2.0.1 Python/3.8.10"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 01 Jun 2023 09:59:22 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "228"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"person\": {\n        \"u_name\": [\n            \"Tolik\",\n            1000,\n            33\n        ],\n        \"u_salary_5_years\": 4200,\n        \"u_age\": 33\n    },\n    \"qa_salary_after_1.5_month\": 3300,\n    \"qa_salary_after_6_months\": 2000,\n    \"qa_salary_after_12_months\": 2700,\n    \"start_qa_salary\": 1000,\n    \"qa_salary_after_3.5_years\": 3800\n}"
+				}
+			]
 		}
 	]
 }
